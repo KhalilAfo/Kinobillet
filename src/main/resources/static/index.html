@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>KinobilletterApp</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+    <script src="index.js"></script>
+</head>
+
+<body style="background-color: #70ca61">
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <h2 class="blockquote text-center" style="color: #080883">
+                <strong>Bestilling av Kinobilletter</strong></h2><br>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4">
+            <br>
+            <form>
+                <div class="form-group">
+                    <label for="film">Velg film</label>
+                    <select class="form-control"  id="film">
+                        <option value="" disabled selected hidden>Velg Film her</option>
+                        <option>Vikings</option>
+                        <option>Game of thrones</option>
+                        <option>Blood and bone</option>
+                        <option> Follow Me</option>
+                        <option>The Lord</option>
+                    </select>
+                    <div id="feil1"></div>
+                </div>
+                <div class="form-group">
+                    <label for="antall">Antall</label>
+                    <input type="text" class="form-control" id="antall">
+                    <div id="feil2"></div>
+                </div>
+                <div class="form-group">
+                    <label for="fornavn">Fornavn</label>
+                    <input type="text" class="form-control" id="fornavn">
+                    <div id="feil3"></div>
+                </div>
+                <div class="form-group">
+                    <label for="etternavn">Etternavn</label>
+                    <input type="text" class="form-control" id="etternavn">
+                    <div id="feil4"></div>
+                </div>
+                <div class="form-group">
+                    <label for="telefonnr">Telefonnr</label>
+                    <input type="text" class="form-control" id="telefonnr">
+                    <div id="feil5"></div>
+                </div>
+                <div class="form-group">
+                    <label for="epost">Epost</label>
+                    <input type="text" class="form-control" id="epost">
+                    <div id="feil6"></div>
+                </div>
+            </form>
+            <button class="btn btn-primary" onclick="kjop()">Kjøp billett</button>
+        </div>
+        <div class="col-md-1"></div>
+        <div class="col-md-7">
+            <h3 style="color: #de0000">Alle billeter</h3>
+            <div id="resultat"></div>
+            <button class="btn btn-danger" onclick="slett();">Slett alle billettene</button>
+        </div>
+    </div>
+</div>
+</body>
+</html>
